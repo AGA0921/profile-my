@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lencho Ahmed </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+body{
+  background:#0f172a;
+  color:#e5e7eb;
+}
+a{text-decoration:none;color:inherit}
+
+/* NAV */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 60px;
+}
+header h2{color:#22d3ee}
+nav a{
+  margin-left:25px;
+  font-weight:500;
+}
+nav a:hover{color:#22d3ee}
+
+/* HOME */
+.home{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:60px;
+  min-height:90vh;
+}
+.home-text h1{
+  font-size:42px;
+  margin:10px 0;
+}
+.home-text span{color:#22d3ee}
+.home-text p{
+  max-width:500px;
+  margin:20px 0;
+  color:#cbd5f5;
+}
+
+/* SOCIAL */
+.social a{
+  margin-right:15px;
+  font-size:20px;
+  color:#22d3ee;
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:12px 30px;
+  background:#22d3ee;
+  color:#020617;
+  border-radius:30px;
+  font-weight:600;
+  box-shadow:0 0 15px #22d3ee;
+}
+
+/* PROFILE */
+.profile{
+  width:300px;
+  height:300px;
+  border-radius:40%;
+  box-shadow:0 0 40px #22d3ee;
+  overflow:hidden;
+}
+.profile img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* SECTION */
+section{
+  padding:80px 60px;
+}
+section h2{
+  color:#22d3ee;
+  margin-bottom:30px;
+  font-size:32px;
+}
+
+/* SKILLS */
+.skills span{
+  display:inline-block;
+  margin:8px;
+  padding:10px 20px;
+  border:1px solid #22d3ee;
+  border-radius:20px;
+}
+
+/* PORTFOLIO */
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+.project{
+  background:#020617;
+  border:1px solid #22d3ee;
+  border-radius:15px;
+  overflow:hidden;
+}
+.project img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
+.project div{
+  padding:15px;
+}
+
+/* CONTACT */
+form{
+  max-width:500px;
+}
+input,textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  background:#020617;
+  border:1px solid #22d3ee;
+  color:#fff;
+  border-radius:10px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:40px;
+  background:#25D366;
+  color:white;
+  padding:15px;
+  border-radius:50%;
+  font-size:40pxpx;
+  box-shadow:0 0 15px #25D366;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  color:#94a3b8;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .home{flex-direction:column;text-align:center}
+  .profile{margin-top:50px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>Portfolio.</h2>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="home" id="home">
+  <div class="home-text">
+    <h3>Hello, It's Me</h3>
+    <h1>Lencho <span>Ahmed</span></h1>
+    <h3>And I'm a <span id="typing"></span></h3>
+
+    <p>
+      I design and develop modern, responsive and professional websites.
+    </p>
+
+    <div class="social">
+      <a href="https://www.facebook.com/d.leencoo"><i class="fab fa-facebook"></i></a>
+      <a href="lencho-ahmed-4a850136b"><i class="fab fa-linkedin"></i></a>
+      
+    </div>
+
+    <a href="Lencho_ Ahmed_cv(1).pdf" download class="btn">Download CV</a>
+  </div>
+
+  <div class="profile">
+    <img src="profile.png" alt="Lencho Ahmed"=width="50" height="10">
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am Lencho Ahmed, a web developer focused on modern UI/UX,
+    frontend and backend development.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>My Skills</h2>
+  <div class="skills">
+    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+    <span>PHP</span><span>Python</span><span>Django</span>
+  </div>
+</section>
+
+
+<section id="portfolio">
+  <h2> Projects</h2>
+  <div class="projects">
+    <div class="project">
+      <img src="project(1).png">
+      <div><h4>AGA Website</h4></div>
+    </div>
+    <div class="project">
+      <img src="project(2).png">
+      <div><h4>portifolio Website</h4></div>
+    </div>
+    <div class="project">
+      <img src="project(3).png">
+      <div><h4>Web Application</h4></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form action="https://formsubmit.co/lenchoa391@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <input type="hidden" name="_captcha" value="false">
+    <button class="btn">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 Lencho Ahmed | All Rights Reserved
+</footer>
+
+<!-- WHATSAPP BUTTON -->
+<a class="whatsapp" 
+href="https://wa.me/251921399695" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- TYPING EFFECT -->
+<script>
+const texts=["Web Developer","Frontend Developer","Backend Developer"];
+let count=0,index=0,current="",letter="";
+(function type(){
+  if(count===texts.length){count=0}
+  current=texts[count];
+  letter=current.slice(0,++index);
+  document.getElementById("typing").textContent=letter;
+  if(letter.length===current.length){
+    count++;index=0;
+    setTimeout(type,1200);
+  }else{
+    setTimeout(type,120);
+  }
+})();
+</script>
+
+</body>
+</html>
